@@ -1,4 +1,11 @@
-angular.module('module1', []).controller('MyCtrl', function($scope) {
+(function (){
+  'use strict';
+
+angular.module('LunchCheck', [])
+.controller('LunchCheckController', LunchCheckController);
+
+LunchCheckController.$inject = ['$scope'];
+function LunchCheckController($scope) {
     $scope.items = "",
     $scope.statusMsg = "",
 
@@ -13,4 +20,6 @@ angular.module('module1', []).controller('MyCtrl', function($scope) {
         $scope.statusMsg = "Please enter data first";
       }
     }
-});
+}
+
+})();
