@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="module1">
+  <head>
+    <meta charset="utf-8">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <title></title>
+  </head>
+  <body ng-controller="MyCtrl">
+    <h1>Module 1 Assignment</h1>
+    <!-- Do consider empty item i.e,. , , as an item towards the count -->
+    <input type="text" ng-model="items" placeholder="Enter comma separated food items">
+    <button type="button" ng-click="checkIfTooMuch()">Check If Too Much</button>
+    <div> {{statusMsg}} </div>
+  </body>
+</html>
